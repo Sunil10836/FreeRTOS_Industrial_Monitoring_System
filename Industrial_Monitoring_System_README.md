@@ -2,6 +2,7 @@
 
 A FreeRTOS-based industrial monitoring application developed for the **STM32F446RE**. The project demonstrates practical RTOS concepts including multitasking, queues, task notifications, software timers, synchronization, alarm/recovery handling, event logging, system status reporting, and task health monitoring.
 
+---
 ## Project Overview
 
 The system monitors simulated industrial parameters:
@@ -14,6 +15,7 @@ The system monitors simulated industrial parameters:
 
 Sensor data is transferred to a Processing Task through a FreeRTOS queue. The Processing Task checks configurable thresholds, generates alarm bitmasks, notifies the Alarm Task, sends events to the Logger Task, and provides data to the Display Task. A Monitor Task supervises task progress using heartbeat/activity counters.
 
+---
 ## System Architecture
 
 ```text
@@ -301,6 +303,7 @@ Example:
 - Heartbeat counters
 - Event-driven task monitoring
 
+---
 ## Hardware and Software
 
 ### Hardware
@@ -308,6 +311,7 @@ Example:
 - STM32 Nucleo-F446RE
 - ARM Cortex-M4F
 - UART for debug/status output
+
 
 ### Software
 
@@ -318,6 +322,7 @@ Example:
 - GNU Make
 - STM32 startup/linker configuration
 
+---
 ## Build Configuration
 
 Target:
@@ -365,7 +370,7 @@ build/stm32f446_freertos.elf
 build/stm32f446_freertos.hex
 build/stm32f446_freertos.bin
 ```
-
+---
 ## Project Structure
 
 ```text
@@ -422,7 +427,7 @@ Industrial_Monitoring_System/
 +-- README.md
 ```
 
-Adjust the exact directory names to match the repository.
+---
 
 ## Example Runtime Scenarios
 
@@ -457,6 +462,7 @@ Temperature : 75.0 C
 Pressure    : 7.0 Bar
 Voltage     : 11.0 V
 ```
+---
 
 ### Recovery
 
@@ -468,6 +474,7 @@ Voltage     : 10.8 V
 [SYSTEM RECOVERED]
 All parameters are within limits
 ```
+---
 
 ## Error Handling
 
