@@ -521,21 +521,6 @@ Actual values can change as features are added. Use the latest build output for 
 13. System recovery/reset mechanism
 14. More realistic sensor drivers
 
-## This project can demonstrate:
-
-- Why a queue is used between Sensor and Processing Tasks
-- Why task notifications are suitable for alarm events
-- Queue vs. task notification
-- Periodic vs. event-driven tasks
-- Mutex vs. semaphore
-- RTOS task priorities
-- Task blocking and `portMAX_DELAY`
-- Heartbeat-based task monitoring
-- Fault detection and recovery
-- Inter-task communication
-- FreeRTOS memory management
-- Embedded UART logging
-- RTOS error handling
 
 ## Status
 
