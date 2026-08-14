@@ -55,7 +55,7 @@ Sensor data is transferred to a Processing Task through a FreeRTOS queue. The Pr
                          | System Health        |
                          +----------------------+
 ```
-
+---
 ## Main Tasks
 
 | Task | Responsibility | Communication / Monitoring |
@@ -112,7 +112,7 @@ means:
 Bit 1 -> High Pressure
 Bit 2 -> Low Voltage
 ```
-
+---
 ## Data Flow
 
 ```text
@@ -140,7 +140,7 @@ Monitor Task
      +---- LoggerActivity
      +---- AlarmActivity
 ```
-
+---
 ## Fault Detection
 
 The Processing Task compares incoming measurements against configured limits.
@@ -193,7 +193,7 @@ Example output:
 ALARM: High Pressure
 ====================
 ```
-
+---
 ## Recovery Detection
 
 When a previously active fault clears and all monitored parameters return within limits, the Processing Task generates:
@@ -282,6 +282,7 @@ Example:
 
 `IDLE`/`STANDBY` for event-driven tasks is normal when no event is pending.
 
+---
 ## FreeRTOS Concepts Demonstrated
 
 - Task creation and management
