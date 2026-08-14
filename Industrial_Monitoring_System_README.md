@@ -67,6 +67,8 @@ Sensor data is transferred to a Processing Task through a FreeRTOS queue. The Pr
 | `DisplayTask` | Present system status | Display queue, heartbeat |
 | `MonitorTask` | Monitor application health | Heartbeat/activity counters |
 
+---
+
 ## Sensor Data
 
 ```c
