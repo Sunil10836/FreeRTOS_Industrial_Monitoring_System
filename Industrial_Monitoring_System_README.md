@@ -1,4 +1,4 @@
-# Industrial Monitoring System
+# FreeRTOS Industrial Monitoring System
 
 A FreeRTOS-based industrial monitoring application developed for the **STM32F446RE**. The project demonstrates practical RTOS concepts including multitasking, queues, task notifications, software timers, synchronization, alarm/recovery handling, event logging, system status reporting, and task health monitoring.
 
