@@ -210,7 +210,7 @@ The Alarm Task reports:
 [SYSTEM RECOVERED]
 All parameters are within limits
 ```
-
+---
 ## Logger Task
 
 Important events are sent to the Logger Task.
@@ -226,6 +226,7 @@ Voltage     : 11.0 V
 
 The Logger Task is event-driven. Therefore, no logging event during a monitoring interval is treated as `IDLE`, not as a failure.
 
+---
 ## Display Task
 
 Current system status is presented through UART:
@@ -243,6 +244,7 @@ Alarm Bits  : 0x00000002
 
 A dedicated STM32 16x2 LCD driver is planned as a future enhancement.
 
+---
 ## Task Health Monitoring
 
 Periodic tasks use heartbeat counters:
