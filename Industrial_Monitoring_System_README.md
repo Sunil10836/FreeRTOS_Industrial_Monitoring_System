@@ -492,6 +492,7 @@ if (status != pdPASS)
     APP_UART_Print("[ERROR] Processing Task creation failed\r\n");
 }
 ```
+---
 
 ## Memory Usage
 
@@ -503,6 +504,8 @@ FLASH : 37 KB / 512 KB
 ```
 
 Actual values can change as features are added. Use the latest build output for release documentation.
+
+---
 
 ## Future Enhancements
 
@@ -521,6 +524,7 @@ Actual values can change as features are added. Use the latest build output for 
 13. System recovery/reset mechanism
 14. More realistic sensor drivers
 
+---
 
 ## Status
 
